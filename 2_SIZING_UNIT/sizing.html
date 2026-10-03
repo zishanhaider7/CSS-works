@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        html {
+            font-size: 16px;
+        }
+
+        .parent {
+            width: 80vw;
+            height: 80vh;
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        .child {
+            width: 50%;
+            height: 100px;
+            background-color: lightblue;
+
+            font-size: 1.5rem;
+        }
+
+        .em-text {
+            font-size: 2em;
+        }
+
+        .vw-box {
+            width: 50vw;
+            height: 50px;
+            background-color: lightgreen;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+
+        <h1>CSS Units (parent class)</h1>
+
+        <div class="child">
+            Width = 50% of parent (child class)
+            <br>
+            Font = 1.5rem
+        </div>
+
+        <p class="em-text">
+            This text uses 2em
+        </p>
+
+        <div class="vw-box">
+            Width = 50vw (vw box)
+        </div>
+
+    </div>
+
+</body>
+</html>

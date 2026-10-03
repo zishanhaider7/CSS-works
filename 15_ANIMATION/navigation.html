@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60vw;
+            height: 50vh;
+            background-color: blueviolet;
+        }
+
+        .box {
+            width: 20vw;
+            height: 20vh;
+            background-color: red;
+            animation: move 3s  1s infinite alternate ;
+        }
+
+        @keyframes move {
+          from {
+            transform: translateZ(0px);
+          }
+          to{
+            transform: translateZ(100px);
+          }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            im the box
+            s
+            <li> <span> hello   </span> </li>
+        </div>
+    </div>
+</body>
+
+</html>

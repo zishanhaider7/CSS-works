@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV bar</title>
+    <style>
+
+        :root{
+            --primary : rgb(230, 0, 0);
+            --background :black;
+            --tertiary : white;
+        }
+        body{
+            background-color: var(--tertiary);
+        }
+        *{
+            text-decoration: none;
+        }
+        .navigation {
+            background-color: var(--background);
+            /* height: 100px; */
+            align-items: center;
+
+        }
+        .button{
+            align-items: center;
+            display: flex;
+            /* padding: 10px; */
+            color: grey;
+            justify-content: space-between;
+            
+        }
+        
+
+        .lefty img {
+            width: 100px;
+            margin: 30px;
+        }
+        ul{
+            margin: 10px;
+        }
+        li{
+            font-style: italic;
+            padding: 10px;
+            list-style: none;
+            display: inline-block;
+           font-size: large;
+           font-weight: bold;
+           
+        }
+        li:hover{
+            color: red;
+        }
+
+        #search{
+            border-radius: 7px;
+            border: none;
+            align-items: center;
+            display: inline-block;
+            justify-content: space-between;
+            margin-right: 10px;
+            padding: 10px;
+        }
+        ::selection{
+            color: red;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="button">
+            <div class="lefty">
+                <img src="netf.png" alt="">
+            </div>
+            <ul>
+                <li>Indian leaks </li>
+                <li>60 FPS HD</li>
+                <li>International</li>
+                <!-- <button>sign in</button>
+                <button>log in</button> -->
+            </ul>
+            <div>
+
+                <input type="text" placeholder="Search" id="search" class="search">
+            </div>
+        </div>
+
+    </nav>
+
+    <main>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto possimus, doloribus amet tempora distinctio sint labore reiciendis eum. Incidunt numquam unde porro vitae corporis quibusdam hic quos esse voluptate, beatae isi nesciunt earum.</p>
+        </div>
+    </main>
+</body>
+
+</html>

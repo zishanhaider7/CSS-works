@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID_WEBSITE</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 150px 1fr 100px;
+            grid-template-areas: "header header"
+                                    "aside main"
+                                    "footer footer";
+
+
+            row-gap: 30px;
+            column-gap: 10px;
+
+        }
+
+        header {
+            grid-area: header;
+            background-color: red;
+        }
+        
+        .card{
+            background-color: purple;
+            display: flex;
+            width: 100px;
+            height: 70px;
+            align-items: center;
+            justify-content: center;
+
+            
+            
+        }
+        aside {
+            grid-area: aside;
+            background-color: navy;
+        }
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            gap: 10px;
+            grid-area: main;
+            background-color: wheat;
+            justify-items: center;
+            align-items: center;
+       
+
+        }
+
+
+        footer {
+            background-color: gray;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <header>
+            This is header
+        </header>
+
+
+
+
+
+        <aside>
+            im aside
+        </aside>
+        <main>
+            <div class="card">Card 1</div>
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+        </main>
+
+
+
+        <footer>
+            this is footer heheh
+        </footer>
+
+
+
+    </div>
+</body>
+
+</html>
